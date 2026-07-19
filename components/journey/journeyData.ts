@@ -1,12 +1,12 @@
 export const journey = [
   {
-    year: "2021",
+    year: "2022",
     title: "Started B.Tech",
     subtitle: "Computer Science Engineering",
   },
   {
-    year: "2024",
-    title: "Frontend Intern",
+    year: "2025",
+    title: "Frontend Intern (Blog Management)",
     subtitle: "Elfinity Technologies",
   },
   {
@@ -16,12 +16,13 @@ export const journey = [
   },
   {
     year: "2026",
-    title: "Built Satvic Health",
-    subtitle: "Full Stack MERN Project",
-  },
-  {
-    year: "2026",
     title: "South Zone Basketball Player",
     subtitle: "Leadership • Teamwork • Discipline",
   },
+  {
+    year: "2026",
+    title: "Built Satvic Health",
+    subtitle: "Full Stack MERN Project",
+  },
+  
 ];

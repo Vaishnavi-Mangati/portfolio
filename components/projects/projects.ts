@@ -27,7 +27,7 @@ export const projects = [
       "Authentication",
     ],
 
-    private: false,
+    companyProject: false,
 
     live: "https://satvic-health-web-app-olive.vercel.app/",
 
@@ -61,10 +61,6 @@ export const projects = [
       "Responsive",
     ],
 
-    private: true,
-
-    live: "",
-
-    github: "",
+    companyProject: true,
   },
 ];

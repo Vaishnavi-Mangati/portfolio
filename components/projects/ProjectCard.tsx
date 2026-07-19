@@ -10,8 +10,8 @@ type Project = {
   image: string;
   tech: string[];
   features: string[];
-  live: string;
-  github: string;
+  live?: string;
+  github?: string;
   companyProject?: boolean;
   reverse?: boolean;
 };
@@ -81,34 +81,36 @@ export default function ProjectCard({
         </div>
 
         <div className="mt-10 flex flex-wrap gap-4">
-          <a
-            href={live}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-full bg-orange-500 px-6 py-3 font-semibold text-white transition hover:bg-orange-400"
-          >
-            Live Demo
-            <FiExternalLink />
-          </a>
+  {!companyProject && (
+    <>
+      <a
+        href={live}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 rounded-full bg-orange-500 px-6 py-3 font-semibold text-white transition hover:bg-orange-400"
+      >
+        Live Demo
+        <FiExternalLink />
+      </a>
 
-          {github && (
-            <a
-              href={github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-white transition hover:border-orange-400"
-            >
-              GitHub
-              <FiGithub />
-            </a>
-          )}
+      <a
+        href={github}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-white transition hover:border-orange-400"
+      >
+        GitHub
+        <FiGithub />
+      </a>
+    </>
+  )}
 
-          {companyProject && (
-            <span className="rounded-full border border-orange-500/40 bg-orange-500/10 px-6 py-3 text-sm font-medium text-orange-300">
-              🔒 Internship Project
-            </span>
-          )}
-        </div>
+  {companyProject && (
+    <span className="rounded-full border border-orange-500/40 bg-orange-500/10 px-6 py-3 text-sm font-medium text-orange-300">
+      🔒 Internship Project
+    </span>
+  )}
+</div>
 
         {companyProject && (
           <p className="mt-5 text-sm italic text-gray-400">

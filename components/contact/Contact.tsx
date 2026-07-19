@@ -45,22 +45,22 @@ export default function Contact() {
           <ContactCard
             icon={<FiMail />}
             title="Email"
-            value="yourmail@gmail.com"
-            href="mailto:yourmail@gmail.com"
+            value="vaishnavimangati@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=vaishnavimangati@gmail.com"
           />
 
           <ContactCard
             icon={<FiLinkedin />}
             title="LinkedIn"
-            value="linkedin.com/in/yourprofile"
-            href="https://linkedin.com/in/yourprofile"
+            value="https://www.linkedin.com/in/vaishnavimangati"
+            href="https://www.linkedin.com/in/vaishnavimangati"
           />
 
           <ContactCard
             icon={<FiGithub />}
             title="GitHub"
-            value="github.com/yourgithub"
-            href="https://github.com/yourgithub"
+            value="https://github.com/Vaishnavi-Mangati"
+            href="https://github.com/Vaishnavi-Mangati"
           />
 
           <ContactCard
@@ -79,7 +79,7 @@ export default function Contact() {
           className="mt-16 flex justify-center"
         >
           <a
-            href="/Vaishnavi_Resume.pdf"
+            href="/Vaishnavi_FullStack_Resume.pdf"
             download
             className="flex items-center gap-3 rounded-full bg-orange-500 px-8 py-4 text-lg font-semibold transition hover:scale-105 hover:bg-orange-600"
           >
